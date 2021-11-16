@@ -20,12 +20,10 @@ class _NotesPageState extends State<NotesPage> {
   int index = 0;
   late List<Note> notes;
   bool isLoading = false;
-  // var _tapPosition;
 
   @override
   void initState() {
     super.initState();
-    // _tapPosition = const Offset(0.0, 0.0);
     refreshNotes();
   }
 
@@ -96,16 +94,6 @@ class _NotesPageState extends State<NotesPage> {
                           ),
                         ),
                       ),
-                      // const Positioned(
-                      //   right: 25,
-                      //   top: 25,
-                      //   child: CircleAvatar(
-                      //     radius: 35,
-                      //     backgroundImage: NetworkImage(
-                      //       "https://64.media.tumblr.com/239ad7e946a65c9e1cbc6ed508e12269/tumblr_nwbyqyd8RJ1s9ab4to1_500.gifv",
-                      //     ),
-                      //   ),
-                      // ),
                     ],
                   ),
                 ),
@@ -170,26 +158,9 @@ class _NotesPageState extends State<NotesPage> {
               refreshNotes();
             },
             child: NoteCardWidget(note: note, index: index),
-            //   onLongPress: () {
-            //     showMenu(
-
-            //         context: context,
-            //         position:  RelativeRect.fromRect(
-            // _tapPosition & const Size(40, 40), // smaller rect, the touch area
-            // Offset.zero & overlay.size // Bigger rect, the entire screen
-            // ),
-            //         items: <PopupMenuEntry<String>>[
-            //           const PopupMenuItem(child: Text("delete")),
-            //           const PopupMenuItem(child: Text("delete")),
-            //         ]);
-            //   },
           );
         },
       );
-
-  // void _storePosition(TapDownDetails details) {
-  //   _tapPosition = details.globalPosition;
-  // }
 
   int getTime() {
     return DateTime.now().hour;

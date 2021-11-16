@@ -64,6 +64,7 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                // ADD THIS PART(IMAGE) IF YOU WISH TO HAVE THE USER IMAGE.
                 // const Positioned(
                 //   top: 2,
                 //   left: 2,
@@ -157,20 +158,12 @@ class _HomePageState extends State<HomePage> {
       height: 60,
       decoration: const BoxDecoration(
         color: Colors.white,
-        // border: Border(
-        //   top: BorderSide(
-        //     color: Colors.black,
-        //     width: 0.6,
-        //   ),
-        // ),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Expanded(
             child: GestureDetector(
-              // shape: ShapeBorder.lerp(a, b, t),
-              // enableFeedback: false,
               onTap: () {
                 setState(() {
                   index = 0;
@@ -232,69 +225,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-
-// children: [
-//                 // const Positioned(
-//                 //   top: 2,
-//                 //   left: 2,
-//                 //   child: CircleAvatar(
-//                 //     radius: 40,
-//                 //     backgroundImage: NetworkImage(
-//                 //       "https://images.unsplash.com/photo-1545987796-200677ee1011?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmV0d29ya3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60",
-//                 //     ),
-//                 //   ),
-//                 // ),
-//                 Positioned(
-//                   bottom: 5,
-//                   child: Text(
-//                     userName,
-//                     style: GoogleFonts.josefinSans(
-//                       color: Colors.white,
-//                       fontSize: MediaQuery.of(context).size.height * 0.04,
-//                     ),
-//                   ),
-//                 ),
-//                 Positioned(
-//                   bottom: 0,
-//                   right: 0,
-//                   child: ElevatedButton(
-//                     style: ButtonStyle(
-//                       backgroundColor: MaterialStateProperty.all(Colors.white),
-//                     ),
-//                     child: Text(
-//                       "Save",
-//                       style: TextStyle(
-//                         color: Colors.blue.shade800,
-//                       ),
-//                     ),
-//                     onPressed: () async {
-//                       final SharedPreferences sharedPreferences =
-//                           await SharedPreferences.getInstance();
-//                       sharedPreferences.setString(keyUserName, userName);
-
-//                       showDialog(
-//                         context: context,
-//                         builder: (context) => AlertDialog(
-//                           elevation: 0.5,
-//                           shape: const RoundedRectangleBorder(
-//                               borderRadius:
-//                                   BorderRadius.all(Radius.circular(20))),
-//                           backgroundColor: dashBoardColor,
-//                           content: Text(
-//                             "Changes made!\nPlease restart the app..",
-//                             style: GoogleFonts.lato(
-//                               color: Colors.white,
-//                               fontSize: 18,
-//                             ),
-//                           ),
-//                           contentPadding:
-//                               const EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-//                         ),
-//                       );
-
-//                       FocusScope.of(context).previousFocus();
-//                     },
-//                   ),
-//                 ),
-//               ],
