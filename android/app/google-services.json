@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "739018897713",
+    "project_id": "notesquotesapp",
+    "storage_bucket": "notesquotesapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739018897713:android:25bd0c64ceba20e5b21810",
+        "android_client_info": {
+          "package_name": "com.example.notes_mood_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739018897713-iqrb7sjro9ho7sr67tgrl98rbrilnb19.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF6U3PboFzuibwoKjMgsO21kkKVHILu3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739018897713-iqrb7sjro9ho7sr67tgrl98rbrilnb19.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
