@@ -200,6 +200,25 @@ class _HomePageState extends State<HomePage> {
                     ),
             ),
           ),
+          // Expanded(
+          //   child: GestureDetector(
+          //     onTap: () {
+          //       setState(() {
+          //         index = 2;
+          //       });
+          //     },
+          //     child: index == 2
+          //         ? const Icon(
+          //             Icons.tag_faces_rounded,
+          //             size: 35,
+          //             color: selectedIconColor,
+          //           )
+          //         : const Icon(
+          //             Icons.mood_rounded,
+          //             size: 30,
+          //           ),
+          //   ),
+          // ),
         ],
       ),
     );
